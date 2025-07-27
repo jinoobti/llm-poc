@@ -1,0 +1,58 @@
+Java Coding Standards for Code Review
+
+1. **Class and Method Naming**
+   - Class names should use CamelCase and be nouns (e.g., InvoiceCalculator).
+   - Method names should use camelCase and be verbs or verb phrases (e.g., calculateTotal).
+
+2. **Constants**
+   - Constants should be declared as static final and use ALL_UPPER_CASE with underscores.
+
+3. **Single Responsibility Principle**
+   - Each class should have a single, clear responsibility.
+   - Methods should do one thing only.
+
+4. **Variable Naming**
+   - Use meaningful, descriptive variable names.
+   - Avoid single-letter names except for loop counters.
+
+5. **Resource Management**
+   - Always close resources such as files, streams, and database connections in a finally block or use try-with-resources.
+
+6. **Magic Numbers**
+   - Avoid magic numbers; use named constants instead.
+
+7. **Comments and Documentation**
+   - Add Javadoc comments for all public classes and methods.
+   - Use inline comments to explain complex logic.
+
+8. **Exception Handling**
+   - Catch specific exceptions, not just Exception.
+   - Log exceptions with meaningful messages.
+
+9. **Indentation and Formatting**
+   - Use 4 spaces per indentation level.
+   - Place opening braces on the same line as the declaration.
+
+10. **Code Structure**
+    - Limit method length to 30 lines where possible.
+    - Group related methods together.
+    - Avoid deeply nested code.
+
+11. **Testing**
+    - Write unit tests for all public methods.
+    - Use assertions to validate expected behavior.
+
+12. **Access Modifiers**
+    - Use the most restrictive access level that makes sense (private > protected > public).
+
+13. **Immutability**
+    - Prefer immutable objects where possible.
+
+14. **Null Handling**
+    - Avoid returning null; use Optional or empty collections where appropriate.
+
+15. **Imports**
+    - Do not use wildcard imports (e.g., import java.util.*;).
+    - Remove unused imports.
+
+End of Java Coding Standards. 
